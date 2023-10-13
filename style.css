@@ -1,0 +1,273 @@
+/* ============ CSS Reset ============= */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ============= Creating Root variables ===========  */
+:root {
+    --primaryFont: system-ui;
+}
+
+/* =========== Utiles CSS ========= */
+.cursorPointer {
+    cursor: pointer;
+}
+
+/* =========== Header CSS =================  */
+
+body {
+    background-color: #2f1893;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.text-light {
+    color: white;
+}
+
+.logo {
+    font-family: var(--primaryFont);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.nav_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_links li {
+    list-style: none;
+    margin: 0px 20px;
+    font-family: var(--primaryFont);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.nav_links li:hover {
+    color: gray;
+}
+
+.btn_purchase {
+    color: white;
+    padding: 5px 20px;
+    border-radius: 30px;
+    font-family: var(--primaryFont);
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #e93a7d;
+    border: none;
+}
+
+/* =========== main content CSS ============== */
+
+.container {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content {
+    width: 28vw;
+}
+
+.heading-text {
+    font-family: var(--primaryFont);
+    font-size: 3rem;
+
+}
+
+.para {
+    font-family: var(--primaryFont);
+    font-size: 20px;
+    width: 70%;
+    margin-top: 2rem;
+}
+
+.btn {
+    border: none;
+    background-color: #e93a7d;
+    padding: 10px 30px;
+    font-size: 1rem;
+    border-radius: 20px;
+    font-family: var(--primaryFont);
+    margin-top: 2rem;
+}
+
+.form {
+    background-color: white !important;
+    padding: 2rem 3rem;
+    border-radius: 5px;
+    max-width: 500px; 
+    margin: 0 auto; 
+}
+
+.form-heading {
+    font-family: var(--primaryFont);
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.form-content {
+    text-align: center;
+}
+
+.form-input input {
+    outline: none;
+    border: 2px solid #a1a1b08d;
+    width: 100%;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    border-radius: 20px;
+}
+
+.form-input input::placeholder {
+    color: #a1a1b0;
+    font-family: var(--primaryFont);
+}
+
+.checkbox-input {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.checkbox-input input {
+    width: 18px;
+    height: 18px;
+    accent-color: #25dac4;
+}
+
+.checkbox-text {
+    margin: 0px 10px;
+    font-family: var(--primaryFont);
+    color: gray;
+}
+
+.btn-sign,
+.btn-twitter {
+    outline: none;
+    width: 100%;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    border-radius: 20px;
+    font-family: var(--primaryFont);
+    background-color: #482be7;
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+
+#twitter {
+    background-color: #1da1f2 !important;
+}
+
+.line {
+    text-align: center;
+    margin: 5px;
+    color: #a1a1b0c0;
+}
+
+.line1,
+.line3 {
+    width: 100%;
+    height: 1px;
+    background-color: #a1a1b0c0;
+}
+
+.closingText {
+    font-family: var(--primaryFont);
+    margin: 10px 0px;
+    font-size: 14px;
+    text-align: center;
+    color: gray;
+    font-weight: 500;
+}
+
+.closingText2 {
+    margin: 0px 5px;
+    color: #25dac4;
+    font-weight: 500;
+}
+
+/* =========== CSS Media Queries ======================  */
+
+/* =============== header media queries ================= */
+/* Responsive styles for small screens (e.g., mobile phones) */
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .navLogo {
+        margin-bottom: 1rem;
+    }
+
+    .nav_links {
+        flex-wrap: wrap;
+    }
+
+    .nav_links li {
+        margin: 12px;
+    }
+}
+
+/* =============== main content media queries =========== */
+
+@media screen and (max-width:768px) {
+    .container {
+        flex-direction: column;
+        margin-top: 0;
+        padding: 1rem;
+    }
+
+    .content {
+        width: auto;
+        margin: 10px auto;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .form{
+        padding: 1rem 2rem;
+    }
+
+    .heading-text {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .para {
+        text-align: center;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .checkbox-input input {
+        width: 15px;
+        height: 15px;
+    }
+}
